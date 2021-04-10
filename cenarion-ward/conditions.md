@@ -1,0 +1,21 @@
+- Condition 1
+  - If Trigger 1: `isSpellInCoolDown == true`
+    - Then `{1. Glow}.Visibility = false`
+- Condition 2
+  - If Trigger 1: `isSpellInCoolDown == false`
+    - Then `{1. Glow}.Visibility = true`
+- Condition 3
+  - If Trigger 1: `activeBuffId == Ward`
+    - Then `{2. Text}.Visibility = true`
+    - And `{1. Text}.Visibility = false`
+    - And `Cooldown.Swipe = false`
+- Condition 4
+  - If Trigger 1: `activeBuffId == {Ward HoT}`
+    - Then `{1. Text}.Visibility = true`
+    - Then `{2. Text}.Visibility = false`
+    - Then `{Cooldown}.Swipe = false`
+- Condition 5
+  - If Trigger 1: `isSpellInCooldown == true` and `activeBuffId == {N/A}`
+    - Then `Cooldown.Swipe = true`
+    - And `{1. Text}.Visibility = true`
+    - And `{2. Text}.Visibility = false`

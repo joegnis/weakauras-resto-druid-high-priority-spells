@@ -1,0 +1,6 @@
+- Condition 1
+  - If Trigger 1: `Remaining Duration <= 5`
+    - Then `{1. Glow}.Visibility = true`
+- Condition 2
+  - If Trigger 1: `Remaining Duration > 5`
+    - Then `{1. Glow}.Visibility = false`
